@@ -1,0 +1,12 @@
+{
+  "license": "UNLICENSED",
+  "description": "A Arma 3 Unit page!",
+  "scripts": {
+    "build": "type export\\css\\*.css | cleancss --s0 -o dist\\index.css && uglifyjs-folder -o dist\\index.js export\\js && htmlmin -o dist\\index.html export\\index.html"
+  },
+  "devDependencies": {
+    "clean-css": "^3.4.20",
+    "html-minifier-cli": "^0.1.0",
+    "uglifyjs-folder": "^0.3.0"
+  }
+}
